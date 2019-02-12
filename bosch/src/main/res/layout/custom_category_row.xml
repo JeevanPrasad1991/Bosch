@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/light_gray"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/storenamelistview_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+            <TextView
+                android:id="@+id/tvstorename1"
+                android:layout_width="match_parent"
+                android:padding="10sp"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"
+                android:text="Balaji Tele Communication"
+                android:textColor="@color/posm_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvkeyaccount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvstorename1"
+                android:text="C 126"
+                android:visibility="gone"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                android:layout_toRightOf="@+id/closechkin1"
+                android:layout_toEndOf="@+id/closechkin1" />
+
+            <ImageView
+                android:id="@+id/closechkin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@drawable/tickgreenv"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvstorename1" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

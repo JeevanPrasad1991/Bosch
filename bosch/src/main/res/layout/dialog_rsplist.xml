@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="* Selected Category List *"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_category_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp" />
+
+    <Button
+        android:id="@+id/dialog_ok"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</LinearLayout>
